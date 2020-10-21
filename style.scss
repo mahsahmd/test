@@ -1,0 +1,46 @@
+.main-box{
+
+    width: 450px;
+    height: 500px;
+    background: rgb(14,23,40);
+    background: linear-gradient(83deg, rgba(14,23,40,1) 0%, rgba(0,8,31,1) 47%);
+    position: absolute;
+    padding:10px 15px;
+    color: white;
+    border: 4px solid;
+    border-image-source:  linear-gradient(83deg, rgba(250,187,11,1) 0%, rgba(255,173,0,1) 23%, rgba(183,106,26,1) 36%, rgba(0,2,15,1) 51%);
+    border-image-slice:4;
+
+    .profile{
+        width: 30%;
+            img{
+                width: 100%;
+            }
+    }
+    .content{
+        margin-top:-300px;
+        width: 70%;
+        font-weight: 600;   
+        line-height: 1.5rem;
+    }
+    #number{
+        font-size: 300px;
+        display: inline;
+        position: relative;
+        top: -100px;
+        right:-170px;
+        opacity: 0.5;
+        mix-blend-mode: hard-light;
+    }
+        
+
+    
+    #read{
+        display: none;
+        border: 1px solid white;
+        height: 2.5rem;
+        width: 20%;
+        color: white;
+        background-color: transparent;
+    }
+}

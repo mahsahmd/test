@@ -1,0 +1,37 @@
+.main-box {
+  width: 450px;
+  height: 500px;
+  background: #0e1728;
+  background: linear-gradient(83deg, #0e1728 0%, #00081f 47%);
+  position: absolute;
+  padding: 10px 15px;
+  color: white;
+  border: 4px solid;
+  border-image-source: linear-gradient(83deg, #fabb0b 0%, #ffad00 23%, #b76a1a 36%, #00020f 51%);
+  border-image-slice: 4; }
+  .main-box .profile {
+    width: 30%; }
+    .main-box .profile img {
+      width: 100%; }
+  .main-box .content {
+    margin-top: -300px;
+    width: 70%;
+    font-weight: 600;
+    line-height: 1.5rem; }
+  .main-box #number {
+    font-size: 300px;
+    display: inline;
+    position: relative;
+    top: -100px;
+    right: -170px;
+    opacity: 0.5;
+    mix-blend-mode: hard-light; }
+  .main-box #read {
+    display: none;
+    border: 1px solid white;
+    height: 2.5rem;
+    width: 20%;
+    color: white;
+    background-color: transparent; }
+
+/*# sourceMappingURL=style.css.map */

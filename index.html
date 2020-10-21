@@ -6,6 +6,40 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
+        <div class="main-box">
+            <div class="profile">
+                <img src="./man-avatar-profile-vector-21372076.jpg" alt="profile">
+            </div>
+            <div id="number">01</div>
+
+            <div class="content">
+                <h1>AhanOnline</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi laboriosam a impedit eius ab deleniti dolor! Eum sit suscipit corrupti amet, sunt libero placeat, earum, accusantium inventore blanditiis mollitia?.</p>
+            </div>
+            
+            <button id="read">Read more</button>
+
+        </div>
+        <script>
+            const num=document.getElementById('number');
+            const button=document.getElementById('read')
+            num.addEventListener('mouseenter',() =>{
+                button.style.display='block';   
+            });
+            
+            num.addEventListener('mouseleave',() =>{
+                button.style.display='none';   
+            });
+            num.addEventListener('click',() =>{
+                button.style.display='block';   
+                
+            });
+            button.addEventListener('mouseenter',()=>{
+                button.style.backgroundColor='white';
+                button.style.color='black';
+            });
+    
+        </script>
     </body>
+    
 </html>
