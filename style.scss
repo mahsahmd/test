@@ -1,5 +1,12 @@
-.main-box{
-
+#main-box{
+    @keyframes numberanimation {
+        form{
+            top: -100px;
+        }
+        to{
+            top:-200px;
+        }
+    }
     width: 450px;
     height: 500px;
     background: rgb(14,23,40);
@@ -7,9 +14,9 @@
     position: absolute;
     padding:10px 15px;
     color: white;
-    border: 4px solid;
-    border-image-source:  linear-gradient(83deg, rgba(250,187,11,1) 0%, rgba(255,173,0,1) 23%, rgba(183,106,26,1) 36%, rgba(0,2,15,1) 51%);
-    border-image-slice:4;
+    border: 4px outset;
+    border-image-source:  linear-gradient(to bottom, rgba(250,187,11,1) 0%, rgba(255,173,0,1) 23%, rgba(183,106,26,1) 36%, rgba(0,2,15,1) 51%);
+    border-image-slice:1;
 
     .profile{
         width: 30%;
@@ -31,6 +38,9 @@
         right:-170px;
         opacity: 0.5;
         mix-blend-mode: hard-light;
+        // animation-name: numberanimation ;
+        animation-duration: 2s;
+
     }
         
 

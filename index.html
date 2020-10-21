@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="main-box">
+        <div id="main-box">
             <div class="profile">
                 <img src="./man-avatar-profile-vector-21372076.jpg" alt="profile">
             </div>
@@ -22,12 +22,15 @@
         </div>
         <script>
             const num=document.getElementById('number');
-            const button=document.getElementById('read')
+            const button=document.getElementById('read');
+            const main=document.getElementById('main-box');
             num.addEventListener('mouseenter',() =>{
                 button.style.display='block';   
+                num.style.animationName='numberanimation';
+                
             });
             
-            num.addEventListener('mouseleave',() =>{
+            main.addEventListener('mouseleave',() =>{
                 button.style.display='none';   
             });
             num.addEventListener('click',() =>{
